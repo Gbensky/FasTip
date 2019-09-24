@@ -15,9 +15,10 @@ public class BaseTest {
     public void setUp() throws Throwable {
         port = "4725";
         capabilities = new DesiredCapabilities();
-        capabilities.setCapability("deviceName", "Spread");
+        capabilities.setCapability("deviceName", "AnyDevice");
         capabilities.setCapability("platformName", "Android");
-        capabilities.setCapability("app", "/Users/Gbenro/Downloads/FasTip.apk");
+        // Replace path value with Absolute path to APK
+        capabilities.setCapability("app", "Absolute/Path/To/FasTip.apk");
         capabilities.setCapability("appWaitActivity", "*");
 
         driver = new AndroidDriver(new URL("http://127.0.0.1:" + port + "/wd/hub"), capabilities);
