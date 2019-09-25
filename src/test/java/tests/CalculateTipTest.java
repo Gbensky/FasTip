@@ -24,6 +24,7 @@ public class CalculateTipTest extends BaseTest {
     @Then("^User should see app fully loaded$")
     public void launchedApp() {
         homePage.isInitialized();
+        driver.quit();
     }
 
     @When("^User enters bill amount$")
@@ -44,5 +45,6 @@ public class CalculateTipTest extends BaseTest {
     @And("^Total Amount as bill amount plus Tip Amount$")
     public void checkCalculatedTotalAmount() {
         homePage.checkTotalAmount();
+        driver.quit();
     }
 }

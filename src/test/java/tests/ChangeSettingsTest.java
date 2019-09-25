@@ -44,9 +44,9 @@ public class ChangeSettingsTest extends BaseTest {
         settingsPage.clickSaveSettingsButton();
     }
 
-
     @Then("^user confirms settings has been saved successfully$")
     public void checkSettings() {
         settingsPage.checkSettings();
+        driver.quit();
     }
 }
