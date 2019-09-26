@@ -2,25 +2,32 @@
 > Tipping Service
 
 ## Requirements
-The minimum requirement by this project is Java version: 1.8.0
+The minimum requirement by this project is Java version: >= 8
 
-### Maven and NodeJS (NPM)
+* [Java 8](https://java.com/en/download/help/download_options.xml)
 * [Apache Maven 3.6.*](https://maven.apache.org/install.html)
 * [NodeJS (npm)](https://nodejs.org/en/)
-* [Beanstalkd](http://kr.github.io/beanstalkd/download.html)
+* [Android Studio](https://developer.android.com/studio)
 
-
-### Appium
-* [Appium](https://www.npmjs.com/package/appium)
 
 ## Install Dependencies
+`npm i -g appium`
+
 `mvn clean install -DskipTests=true`
 
 ## Run Appium
 
+Change test port to Appium port of your choosing in src/test/java/tests/BaseTest.java file
+
+Run command below with the port in the BaseTest file
+
 `appium -p <port>`
 
-Add change test port to Appium port in BaseTest file
-
 ## Run Test
+Change path of apk in src/test/java/tests/BaseTest.java file to the path of the apk in the main directory of the project.
+ 
+Open a working directory of the project in a new terminal.
+
+Run the command below
+
 `mvn test`
