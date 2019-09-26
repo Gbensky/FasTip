@@ -9,6 +9,19 @@ The minimum requirement by this project is Java version: >= 8
 * [NodeJS (npm)](https://nodejs.org/en/)
 * [Android Studio](https://developer.android.com/studio)
 
+## Setting up Environment
+
+Set up the following in your path:
+
+- ANDROID_HOME (path to your android sdk directory)
+- JAVA_HOME (path to your Java JDK home directory)
+- MAVEN_HOME (path to the bin folder of the extracted apache maven folder)
+
+Ensure the above path variables are added to your .bash_profile
+
+Run command
+
+`source .bash_profile`
 
 ## Install Dependencies
 `npm i -g appium`
@@ -27,6 +40,8 @@ Run command below with the port in the BaseTest file
 Change path of apk in src/test/java/tests/BaseTest.java file to the path of the apk in the main directory of the project.
  
 Open a working directory of the project in a new terminal.
+
+Connect a USB Debugging enabled device to your test system.
 
 Run the command below
 
