@@ -5,7 +5,7 @@
 The minimum requirement by this project is Java version: >= 8
 
 * [Java 8](https://java.com/en/download/help/download_options.xml)
-* [Apache Maven 3.6.*](https://maven.apache.org/install.html)
+* [Apache Maven 3.5.* and above](https://maven.apache.org/install.html)
 * [NodeJS (npm)](https://nodejs.org/en/)
 * [Android Studio](https://developer.android.com/studio)
 
@@ -41,7 +41,7 @@ Change path of apk in src/test/java/tests/BaseTest.java file to the path of the 
  
 Open a working directory of the project in a new terminal.
 
-Connect a USB Debugging enabled device to your test system.
+Connect a USB Debugging enabled android device to your test system.
 
 Run the command below
 
